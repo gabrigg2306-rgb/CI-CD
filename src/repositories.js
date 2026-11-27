@@ -3,8 +3,8 @@ function memoryRepository() {
   const tasks = [];
   return {
     async init() {},
-    async list(){
-      return tasks.map((x)=>({...x}));
+    async list() {
+      return tasks.map((x) => ({ ...x }));
     },
     async create({ title, done }) {
       const task = { id: nextId++, title, done };
